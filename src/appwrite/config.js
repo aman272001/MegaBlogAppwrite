@@ -131,7 +131,7 @@ export class Service{
     getFilePreview(fileId){
         
         if(!fileId) return '';
-        return this.bucket.getFilePreview(
+        return this.bucket.getFileView(
             conf.appWriteBucketId,
             fileId, 
             
